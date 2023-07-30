@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { UpComingModule } from './up-coming/up-coming.module';
-import { PopularModule } from './popular/popular/popular.module';
+import { PopularModule } from './popular/popular.module';
 import { TrendingModule } from './trending/trending/trending.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
