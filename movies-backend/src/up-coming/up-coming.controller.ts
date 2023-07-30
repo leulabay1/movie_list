@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { Movies } from '../Dto/createMovie.dto';
-import { Movie } from 'src/up-coming/schemas/movie.schema';
+import { Movie } from '../up-coming/schemas/movie.schema';
 import { UpComingService } from './up-coming.service';
 
 @Controller('up-coming')
