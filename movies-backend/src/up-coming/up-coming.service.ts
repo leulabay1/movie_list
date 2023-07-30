@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { FilterQuery, Model } from 'mongoose';
-import { Movie, movieDocument } from 'src/up-coming/schemas/movie.schema';
+import { Movie, movieDocument } from '../up-coming/schemas/movie.schema';
 
 @Injectable()
 export class UpComingService {

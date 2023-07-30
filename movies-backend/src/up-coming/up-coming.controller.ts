@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { Movies } from 'src/Dto/createMovie.dto';
+import { Movies } from '../Dto/createMovie.dto';
 import { Movie } from 'src/up-coming/schemas/movie.schema';
 import { UpComingService } from './up-coming.service';
 

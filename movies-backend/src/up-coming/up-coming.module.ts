@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import * as mongoose from 'mongoose';
 import { UpComingService } from './up-coming.service';
-import { Movie, MovieSchema } from 'src/up-coming/schemas/movie.schema';
+import { Movie, MovieSchema } from '../up-coming/schemas/movie.schema';
 import { UpComingController } from './up-coming.controller';
 
 @Module({
