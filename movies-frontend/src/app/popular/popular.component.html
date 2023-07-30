@@ -84,7 +84,7 @@
           <ul id="popular-movies" class="py-4 px-0 d-flex flex-wrap gap-4 shadow-lg  ">
             <li *ngFor="let pop of populares" class="rounded-2 bg-dark"> 
               <a >
-               <img src="http://localhost:3000/{{pop.poster_path}}" width="300px" height="420px" alt="">
+               <img src="https://movie-list-s3r4.vercel.app/{{pop.poster_path}}" width="300px" height="420px" alt="">
                   <div class="movie-card-title  d-flex justify-content-around  py-3 ">
                     <h2 class="fs-6">{{pop.title}}</h2>
                     <p class="border-3 rounded border-warning fs-6 ">{{pop.vote_average}}</p>
