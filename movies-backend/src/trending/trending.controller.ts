@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post, Query } from '@nestjs/common';
-import { Movies } from '../../Dto/createMovie.dto';
+import { Movies } from '../Dto/createMovie.dto';
 import { TrendingMovie } from './schemas/trending.schema';
 import { TrendingService } from './trending.service';
 import { Query as ExpressQuery } from 'express-serve-static-core';
