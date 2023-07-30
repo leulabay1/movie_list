@@ -12,7 +12,7 @@ export class SignUpService {
   }
 
   signUp(user: user){
-    return this.http.post('http://localhost:3000/user',user);
+    return this.http.post('https://movie-list-olive.vercel.app/user',user);
   }
 
 }

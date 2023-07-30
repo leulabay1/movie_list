@@ -14,7 +14,7 @@ export class TredingService {
   constructor(private http: HttpClient) { }
   getTreding(): any{
     console.log(this.page,this.limit)
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/trending?page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/trending?page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -36,7 +36,7 @@ export class TredingService {
       this.page=1
       this.limit=8
     }
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/trending?catagory=${catagory}&page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/trending?catagory=${catagory}&page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -59,7 +59,7 @@ export class TredingService {
     }
     
     console.log(this.catagory,this.page,this.limit)
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/trending?gener=${this.catagory}&page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/trending?gener=${this.catagory}&page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){

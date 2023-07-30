@@ -14,7 +14,7 @@ export class LoginService {
   }
 
   login(user: User){
-    return this.http.post('https://movie-list-s3r4.vercel.app/auth/login',user)
+    return this.http.post('https://movie-list-olive.vercel.app/auth/login',user)
     .pipe(map((res)=>{
         return res
     }));

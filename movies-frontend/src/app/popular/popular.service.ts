@@ -14,7 +14,7 @@ export class PopularService {
   constructor(private http: HttpClient) { }
   getpopular(): any{
     console.log(this.gener,this.limit,this.page)
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/popular?page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/popular?page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -36,7 +36,7 @@ export class PopularService {
       this.page=1
       this.limit=8
     }
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/popular?gener=${gener}&page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/popular?gener=${gener}&page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -59,7 +59,7 @@ export class PopularService {
     }
     
     console.log(this.gener,this.page,this.limit)
-    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-s3r4.vercel.app/popular?gener=${this.gener}&page=${this.page}&limit=${this.limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/popular?gener=${this.gener}&page=${this.page}&limit=${this.limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){

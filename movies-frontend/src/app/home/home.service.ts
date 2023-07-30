@@ -11,7 +11,7 @@ export class HomeService {
   
   constructor(private http: HttpClient) { }
   getUpComing(): any{
-    return this.http.get<{[data: string]: Movies}>('http://localhost:3000/up-coming')
+    return this.http.get<{[data: string]: Movies}>('https://movie-list-olive.vercel.app/up-coming')
     .pipe(map((res)=>{
       const product=[];
       for(let data in res){
@@ -26,7 +26,7 @@ export class HomeService {
   getpopular(): any{
     const page=1;
     const limit=10;
-    const result= this.http.get<{[data: string]: Movies}>(`http://localhost:3000/popular?page=${page}&limit=${limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/popular?page=${page}&limit=${limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -42,7 +42,7 @@ export class HomeService {
   getpopularfeatured(): any{
     const page=1;
     const limit=4;
-    const result= this.http.get<{[data: string]: Movies}>(`http://localhost:3000/popular?page=${page}&limit=${limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/popular?page=${page}&limit=${limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -59,7 +59,7 @@ export class HomeService {
   getTrending(): any{
     const page=1;
     const limit=10;
-    const result= this.http.get<{[data: string]: Movies}>(`http://localhost:3000/trending?page=${page}&limit=${limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/trending?page=${page}&limit=${limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
@@ -76,7 +76,7 @@ export class HomeService {
   getTrendingfeatured(): any{
     const page=1;
     const limit=4;
-    const result= this.http.get<{[data: string]: Movies}>(`http://localhost:3000/trending?page=${page}&limit=${limit}`)
+    const result= this.http.get<{[data: string]: Movies}>(`https://movie-list-olive.vercel.app/trending?page=${page}&limit=${limit}`)
         .pipe(map((res)=>{
           const product=[];
           for(let data in res){
