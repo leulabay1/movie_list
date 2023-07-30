@@ -36,7 +36,7 @@
         <ul id="trending-movies" class="py-4 px-0 d-flex flex-wrap gap-4 shadow-lg  ">
           <li *ngFor="let tre of tredinges" class="rounded-2 bg-dark hover"> 
             <a >
-             <img src="../../..{{tre.poster_path}}" width="300px" height="420px" alt="">
+             <img src="/assets{{tre.poster_path}}" width="300px" height="420px" alt="">
                 <div class="movie-card-title  d-flex justify-content-around  py-3 ">
                   <h2 class="fs-6 ">{{tre.title}}</h2>
                   <p class="border-3 rounded border-warning fs-6 ">{{tre.vote_average}}</p>

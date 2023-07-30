@@ -34,7 +34,7 @@
         <ul id="upcoming-movies" class="d-flex  gap-5 overflow-auto p-4" >
           <li  *ngFor="let upcome of upcominges" class="shadow">
             <a >
-              <img src='../../..{{upcome.poster_path}}' width="300px" height="420px" alt=""/>
+              <img src='/assets{{upcome.poster_path}}' width="300px" height="420px" alt=""/>
                 <div class="movie-card-title d-flex justify-content-around py-3">
                   <h2 class="fs-6">{{upcome.title}}</h2>
                   <div class="border-3 rounded border-warning fs-6">{{upcome.vote_average}}</div>
@@ -93,7 +93,7 @@
         <ul id="trending-movies" class="py-4 px-0 d-flex gap-4 shadow-lg  ">
           <li *ngFor="let pop of featuredpopulares" class="rounded-2 bg-dark"> 
             <a >
-             <img src="../../..{{pop.poster_path}}" width="300px" height="420px" alt="">
+             <img src="/assets{{pop.poster_path}}" width="300px" height="420px" alt="">
                 <div class="movie-card-title  d-flex justify-content-around  py-3 ">
                   <h2 class="fs-6 ">{{pop.title}}</h2>
                   <p class="border-3 rounded border-warning fs-6 ">{{pop.vote_average}}</p>
@@ -115,7 +115,7 @@
         <ul id="popular-movies" class="py-4 px-0 d-flex gap-4 shadow-lg  ">
           <li *ngFor="let tre of featuredTrendinges" class="rounded-2 bg-dark">
             <a >
-             <img src="../../..{{tre.poster_path}}" width="300px" height="420px" alt="">
+             <img src="/assets{{tre.poster_path}}" width="300px" height="420px" alt="">
                 <div class="movie-card-title  d-flex justify-content-around  py-3 ">
                   <h2 class="fs-6 ">
                     {{tre.title}}
