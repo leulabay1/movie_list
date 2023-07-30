@@ -12,7 +12,7 @@ import { join } from 'path';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://127.0.0.1:27017/nest',{
+    MongooseModule.forRoot("mongodb+srv://leul1:1nE5YenZ4d3CEzoa@cluster0.hslqx7t.mongodb.net/movie?retryWrites=true&w=majority",{
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
